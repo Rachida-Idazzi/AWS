@@ -1,8 +1,4 @@
 
-## ☁️ AWS VPC & Bastion Host Architecture
-
-
-
 <p align="center">
   <img src="https://img.shields.io/badge/Cloud-AWS-orange?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS">
   <img src="https://img.shields.io/badge/Service-EC2-orange?style=for-the-badge&logo=amazonec2&logoColor=white" alt="EC2">
@@ -11,12 +7,15 @@
 </p>
 
 <p align="center">
+AWS VPC & Bastion Host Architecture
+  
+<p align="center">
   <b>A hands-on AWS networking project demonstrating secure cloud infrastructure, subnet isolation, traffic routing, and controlled administrative access.</b>
 </p>
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project showcases the design and deployment of a custom **Amazon Virtual Private Cloud (VPC)** from the ground up.
 
@@ -24,7 +23,7 @@ The architecture separates public-facing resources from private workloads, using
 
 The project explores essential AWS networking and security concepts through practical implementation, configuration, and verification.
 
-### ✨ Key Features
+###  Key Features
 
 - **Custom VPC:** Dedicated network environment with a defined IPv4 address range.
 - **Public & Private Subnets:** Separation of internet-facing and internal resources.
@@ -36,7 +35,7 @@ The project explores essential AWS networking and security concepts through prac
 
 ---
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 The infrastructure consists of one custom VPC, two subnets, three EC2 instances, and the necessary networking components to control traffic flow.
 
@@ -64,7 +63,7 @@ The infrastructure consists of one custom VPC, two subnets, three EC2 instances,
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 01-vpc-bastion-host/
@@ -85,7 +84,7 @@ The infrastructure consists of one custom VPC, two subnets, three EC2 instances,
 
 ---
 
-## ⚙️ Implementation Walkthrough
+## Implementation Walkthrough
 
 ### 01. VPC & Subnet Configuration
 
@@ -210,7 +209,7 @@ Metrics monitored include:
 
 ---
 
-## 🧪 Verification & Testing
+## Verification & Testing
 
 Following deployment, connectivity and accessibility tests were performed to verify that the public EC2 instance was running correctly and that the network configuration supported the expected traffic flow.
 
@@ -262,23 +261,23 @@ The public EC2 instance was successfully accessed and tested. HTTP availability,
 
 ---
 
-🔐 Security Considerations
+**Security Considerations**
 
 This project also demonstrates several important cloud security practices:
 
-Avoid exposing private EC2 instances through public IP addresses.
+- Avoid exposing private EC2 instances through public IP addresses.
 
-Restrict SSH access to trusted administrator IP addresses.
+- Restrict SSH access to trusted administrator IP addresses.
 
-Allow private server SSH access only from the Bastion Host security group.
+- Allow private server SSH access only from the Bastion Host security group.
 
-Use private subnets for workloads that do not require direct inbound internet access.
+- Use private subnets for workloads that do not require direct inbound internet access.
 
-Monitor infrastructure performance to support operational visibility.
+- Monitor infrastructure performance to support operational visibility.
 
 ---
 
-Project Outcome
+**Project Outcome**
 
 Successfully designed and deployed a functional AWS VPC architecture featuring public and private networking, controlled internet connectivity, and secure administrative access through a Bastion Host.
 
